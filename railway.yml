@@ -1,0 +1,12 @@
+name: railway-vpn
+services:
+  v2ray:
+    build: .
+    ports:
+      - internal: 8080
+        public: true
+    env:
+      - key: UUID
+        value: ""
+      - key: PORT
+        value: "8080"
