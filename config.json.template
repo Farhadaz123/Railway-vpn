@@ -1,0 +1,23 @@
+{
+  "inbounds": [
+    {
+      "listen": "0.0.0.0",
+      "port": PORT_PLACEHOLDER,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "UUID_PLACEHOLDER",
+            "alterId": 0
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": { "path": "/", "headers": { "Host": "" } },
+        "tlsSettings": { "insecure": true }
+      }
+    }
+  ],
+  "outbounds": [{ "protocol": "freedom" }]
+}
